@@ -41,3 +41,10 @@ __使用版本：CentOS7__
 配置虚拟机系统：自定义 -> 处理器内核总数<实体主机逻辑处理器数目 -> I/O控制器（LSI logic） ->  虚拟磁盘类型SCSI  ->  虚拟磁盘拆分成多个文件  
 安装系统：安装源：本地介质，软件选择：GNOME桌面  ->  磁盘分区：标准分区，/boot 1G xfs，swap 4G swap， / 45G xfs  -> 禁用Kdump
 ```
+# Linux Desktop & terminal
+```
+Ctrl+Alt+F2-6：打开无图形化界面终端
+Ctrl+Alt+F1：打开图形化桌面
+Ctrl+Shift+=：放大terminal界面
+Ctrl+Shift+-：缩小terminal界面
+```
