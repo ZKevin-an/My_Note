@@ -50,4 +50,9 @@ git clone 远程地址            # 克隆远程仓库到本地
 3. Github头像 -> Settings -> SSH keys -> Add SSH key -> 将刚才复制的内容放入 -> Add key
 4. ssh –T git@github.com  验证是否设置成功
 5. 配置用户名和邮箱：
+```  
+# 8.gitignore设置
+```
+1. 在目录下新建.gitignore文件
+2. 输入git config --global core.excludesfile ~/.gitignore
 ```
