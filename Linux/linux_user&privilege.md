@@ -1,4 +1,12 @@
 __Ps：__ 用户权限设置管理需要用到root用户
+# root用户
+```
+对于CentOS7系统来说，创建时可直接创建root用户
+而对于Ubuntu来说，安装后都是普通用户权限，没有root权限，所以一般使用su或者sudo获得root权限
+一开始直接su会提示su：Authentication failure的问题，需要先给root设置密码：
+sudo passwd
+```
+
 # useradd
 ```
 useradd 用户名：添加新用户
