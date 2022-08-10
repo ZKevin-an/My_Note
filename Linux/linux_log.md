@@ -98,3 +98,15 @@ postrotate/endscript        在日志轮替之后执行脚本命令
 日志轮替机制原理：
 通过crond实现的，可以在/etc/crond.daily/中找到logrotate任务，说明系统每天会执行一次logrotate
 ```
+
+# 内存日志
+```
+有些日志是放入内存中的，重启就会清空，和系统是实时相关的内容
+通过journalctl查看内存日志，常用指令：
+journalctl：# 查看全部
+journalctl -n 3：# 查看最新的3条
+--since 19:00 --until 19:10  # 查看从起始到结束时间的日志
+-p err # 报错日志
+-o verbose  # 日志详细内容
+_PID=1234 _COMM=sshd  # 查看包含这些参数的日志
+```
