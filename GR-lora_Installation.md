@@ -20,7 +20,7 @@ git clone -b v0.2.2 git://git.osmocom.org/gr-osmosdr
 cd gr-osmosdr/
 mkdir build
 cd build/
-cmake ../
+cmake ../ -DENABLE_RTL=ON
 make
 sudo make install
 sudo ldconfig
